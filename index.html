@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valiutų Kursai</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-header">
+            <div class="container">
+                <h1 class="logo">Valiutų Kursai</h1>
+                <div class="mobile-menu" onclick="toggleMenu()">☰</div>
+                <nav class="navigation">
+                    <ul>
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Pagrindinis</a></li>
+                        <li class="nav-item"><a class="nav-link" href="istorija.html">Valiutų istorija</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kursai.html">Kursų Istorija</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kontaktai.html">Kontaktai</a></li>
+                    </ul>
+                </nav>  
+            </div>
+        </header>
+        <main class="content">
+            <section class="current-rates">
+                <h2>Dabartiniai Valiutų Kursai</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>JAV doleris</h3>
+                        <img src="/img/dollar.png" alt="JAV dolerio simbolis" class="card-img">
+                        <p>Santrumpa: USD</p>
+                        <p>Kursas: 1.10 EUR</p>
+                    </div>
+                    <div class="card">
+                        <h3>Did Britanijos svaras</h3>
+                        <img src="/img/svaras.png" alt="Didžiosios Britanijos svaro simbolis" class="card-img">
+                        <p>Santrumpa: GBP</p>
+                        <p>Kursas: 0.85 EUR</p>
+                    </div>
+                    <div class="card">
+                        <h3>Šveicarijos frankas</h3>
+                        <img src="/img/franc.png" alt="Šveicarijos franko simbolis" class="card-img">
+                        <p>Santrumpa: CHF</p>
+                        <p>Kursas: 1.05 EUR</p>
+                    </div>
+                    <div class="card">
+                        <h3>Rusijos rublis</h3>
+                        <img src="/img/rublis.png" alt="Rusijos rublio simbolis" class="card-img">
+                        <p>Santrumpa: RUB</p>
+                        <p>Kursas: 0.0094 EUR</p>
+                    </div>
+                    <div class="card">
+                        <h3>Kinijos juanis</h3>
+                        <img src="/img/yuan.png" alt="Kinijos juanio simbolis" class="card-img">
+                        <p>Santrumpa: CNY</p>
+                        <p>Kursas: 0.13 EUR</p>
+                    </div>
+                    <div class="card">
+                        <h3>Japonijos jena</h3>
+                        <img src="/img/yen.png" alt="Japonijos jenos simbolis" class="card-img">
+                        <p>Santrumpa: JPY</p>
+                        <p>Kursas: 0.0061 EUR</p>
+                    </div>
+                </div>
+            </section>
+            <section class="bottom-section">
+                <div class="bottom-card calculator-section">
+                    <h2>Valiutų Skaičiuoklė</h2>
+                    <form id="converter-form">
+                        <label for="amount">Suma:</label>
+                        <input type="number" id="amount" placeholder="Įveskite sumą" required>
+                        <label for="from">Iš:</label>
+                        <select id="from">
+                            <option value="EUR">Euras</option>
+                            <option value="USD">JAV doleris</option>
+                            <option value="GBP">Did Britanijos svaras</option>
+                            <option value="JPY">Japonijos jena</option>
+                            <option value="CNY">Kinijos jena</option>
+                            <option value="RUB">Rusijos rublis</option>
+                            <option value="CHF">Šveicarijos frankas</option>
+                        </select>
+                        <label for="to">Į:</label>
+                        <select id="to">
+                            <option value="USD">JAV doleris</option>
+                            <option value="EUR">Euras</option>
+                            <option value="GBP">Did Britanijos svaras</option>
+                            <option value="JPY">Japonijos jena</option>
+                            <option value="CNY">Kinijos jena</option>
+                            <option value="RUB">Rusijos rublis</option>
+                            <option value="CHF">Šveicarijos frankas</option>
+                        </select>
+                        <button type="submit">Konvertuoti</button>
+                    </form>
+                    <div id="conversion-result" class="conversion-result">
+                        Rezultatas bus rodomas čia.
+                    </div>
+                </div>
+                <div class="bottom-card chart-container">
+                    <div class="carousel">
+                        <div class="carousel-slide">
+                            <div class="carousel-item active">
+                                <h3>Metu krytimas</h3>
+                                <p>
+                                    2024 metais Rusijos rublio kursas patyrė reikšmingą nuosmukį, atspindintį šalies ekonomikos problemas ir geopolitinius iššūkius. Geopolitinės įtampos bei griežtos tarptautinės sankcijos reikšmingai paveikė šalies finansinę sistemą, mažindamos užsienio valiutų srautus ir investicijų patrauklumą. Rusijos eksportas, stipriai priklausantis nuo energijos išteklių, susidūrė su sumažėjusia pasauline paklausa ir naujais prekybos apribojimais.
+                                    
+                                    Infliacijos augimas ir ribota prieiga prie pasaulinių finansų rinkų dar labiau apsunkino situaciją, stiprindami rublio nuvertėjimą. Gyventojai susidūrė su didėjančiomis prekių ir paslaugų kainomis, o investuotojai prarado pasitikėjimą šalies rinkomis. Šie ekonominiai sunkumai tapo aiškiu signalu apie didelius iššūkius, su kuriais susidūrė Rusijos ekonomika 2024 metais, stipriai paveikdami tiek vietos gyventojus, tiek tarptautinius partnerius. Rublio nuosmukis tapo vienu iš ryškiausių metų simbolių, atspindinčių šalies ekonomikos nestabilumą ir neigiamas geopolitinių konfliktų pasekmes.
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <h3>Metu augimas</h3>
+                                <p>2024 metais Kinijos juanis (CNY) pasižymėjo didžiausiu augimu tarp pasaulio valiutų, pritraukdamas dėmesį kaip stiprėjanti pasaulinė valiuta. Šį reikšmingą kilimą lėmė stiprėjanti Kinijos ekonomika, kuri parodė tvirtą augimą nepaisant pasaulinių iššūkių. Išaugęs eksportas, orientuotas į aukštos kokybės technologijas ir gaminius, sustiprino šalies ekonominį statusą. Be to, Kinijos vyriausybės pastangos stiprinti juanio tarptautinį vaidmenį per įvairias prekybos iniciatyvas ir finansinius susitarimus prisidėjo prie jo augimo.
+
+                                    Palankūs prekybos susitarimai su didžiosiomis pasaulio valstybėmis, tokiomis kaip Europos Sąjunga ir Jungtinės Amerikos Valstijos, dar labiau padidino pasitikėjimą šia valiuta. Kinijos juanio stabilumas ir augimas tapo simboliu šalies ekonomikos tvirtumo bei augančio jos vaidmens pasaulinėje finansų rinkoje. Investuotojai iš viso pasaulio atkreipė dėmesį į šią valiutą kaip į patrauklų pasirinkimą, o tai toliau skatino juanio stiprėjimą. Juanio augimas taip pat simbolizavo Kinijos pastangas įsitvirtinti kaip pagrindinei ekonominei galiai tarptautinėje arenoje.
+                                </p>
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev-btn">&#10094;</button>
+                        <button class="carousel-btn next-btn">&#10095;</button>
+                    </div>
+                </div>
+            </section> 
+        </main>
+        <footer class="main-footer">
+            <p>&copy; 2024 Valiutų Kursai. Visos teisės saugomos.</p>
+        </footer>
+    </div>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>

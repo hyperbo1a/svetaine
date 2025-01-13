@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktai</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-header">
+            <div class="container">
+                <h1 class="logo">Valiutų Kursai</h1>
+                <div class="mobile-menu" onclick="toggleMenu()">☰</div>
+                <nav class="navigation">
+                    <ul>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Pagrindinis</a></li>
+                        <li class="nav-item"><a class="nav-link" href="istorija.html">Valiutų istorija</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kursai.html">Kursų Istorija</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="kontaktai.html">Kontaktai</a></li>
+                    </ul>
+                </nav>  
+            </div>
+        </header>
+        <main class="content">
+            <section class="contact-section">
+                <h2>Susisiekite su mumis!</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Kontaktinė informacija</h3>
+                        <p><strong>Adresas:</strong> Vilniaus g. 1, Vilnius</p>
+                        <p><strong>Telefonas:</strong> +370 600 12345</p>
+                        <p><strong>El. paštas:</strong> info@valiutukursai.lt</p>
+                        <p><strong>Darbo laikas:</strong> I-V: 9:00 - 18:00, VI: 10:00 - 15:00</p>
+                        <img src="/img/questions.png" alt="klausymai" class="img">
+                    </div>
+                    <div class="contact-form">
+                        <h3>Rašykite mums</h3>
+                        <form action="#" method="post">
+                            <label for="name">Vardas:</label>
+                            <input type="text" id="name" name="name" placeholder="Įveskite savo vardą" required>
+                            
+                            <label for="email">El. paštas:</label>
+                            <input type="email" id="email" name="email" placeholder="Įveskite savo el. paštą" required>
+                            
+                            <label for="message">Žinutė:</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Įveskite savo žinutę" required></textarea>
+                            
+                            <button type="submit">Siųsti</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <p>&copy; 2024 Valiutų Kursai. Visos teisės saugomos.</p>
+        </footer>
+    </div>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
